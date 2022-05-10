@@ -31,6 +31,7 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QLabel *label;
+    QLabel *label_2;
     QMenuBar *menubar;
     QMenu *menuPomoc;
     QStatusBar *statusbar;
@@ -54,12 +55,18 @@ public:
         pushButton_2->setGeometry(QRect(340, 260, 80, 24));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(320, 330, 111, 41));
+        label->setGeometry(QRect(330, 340, 111, 41));
         label->setAlignment(Qt::AlignCenter);
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(430, 330, 111, 61));
+        QFont font;
+        font.setPointSize(20);
+        label_2->setFont(font);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 800, 22));
         menuPomoc = new QMenu(menubar);
         menuPomoc->setObjectName(QString::fromUtf8("menuPomoc"));
         MainWindow->setMenuBar(menubar);
@@ -71,6 +78,7 @@ public:
         menuPomoc->addSeparator();
         menuPomoc->addAction(actionZamknij);
         menuPomoc->addAction(actionO_Qt);
+        menuPomoc->addAction(actionZamknij);
 
         retranslateUi(MainWindow);
 
@@ -85,6 +93,7 @@ public:
         pushButton->setText(QCoreApplication::translate("MainWindow", "Zamknij", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Licznik", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "ilosc klikniec:", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         menuPomoc->setTitle(QCoreApplication::translate("MainWindow", "Pomoc", nullptr));
     } // retranslateUi
 
