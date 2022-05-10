@@ -45,6 +45,8 @@
      <rect>
       <x>320</x>
       <y>330</y>
+      <x>330</x>
+      <y>340</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -56,6 +58,24 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>330</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -64,6 +84,7 @@
      <y>0</y>
      <width>800</width>
      <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuPomoc">
@@ -73,6 +94,7 @@
     <addaction name="separator"/>
     <addaction name="actionZamknij"/>
     <addaction name="actionO_Qt"/>
+    <addaction name="actionZamknij"/>
    </widget>
    <addaction name="menuPomoc"/>
   </widget>
